@@ -1,0 +1,51 @@
+{
+    "nav_about": "Hakkımızda",
+    "nav_services": "Hizmetler",
+    "nav_contact": "İletişim",
+    
+    "hero_title": "Futbol & Spor",
+    
+    "about_title": "Hakkımızda",
+    "about_intro": "Sporosphere Sports Agency, yetenekli sporcuları küresel sahnede temsil etmeye adanmış modern bir futbol ve spor yönetimi ajansıdır.",
+    
+    "mission_title": "Misyonumuz",
+    "mission_text": "Sporculara hem saha içinde hem de saha dışında profesyonellik, dürüstlük ve uzun vadeli bir bakış açısıyla rehberlik etmek.",
+    
+    "vision_title": "Vizyonumuz",
+    "vision_text": "Şeffaflık ve mükemmellik ile tanınan, dünya çapında güvenilen bir spor yönetimi ajansı olmak.",
+    
+    "values_title": "Değerlerimiz",
+    "values_text": "Aldığımız her kararda dürüstlük, bağlılık ve sporcu öncelikli yaklaşım.",
+    
+    "stat_athletes": "Temsil Edilen Sporcu",
+    "stat_countries": "Ülke",
+    "stat_years": "Yıl Deneyim",
+    
+    "services_title": "Hizmetlerimiz",
+    "service1_title": "Oyuncu Temsilciliği",
+    "service1_desc": "Oyuncuların çıkarlarının her aşamada korunmasını sağlayan profesyonel temsil.",
+    "service2_title": "Sözleşme Müzakereleri",
+    "service2_desc": "Uzun vadeli değer ve finansal güvenliğe odaklanan stratejik müzakereler.",
+    "service3_title": "Kariyer Yönetimi",
+    "service3_desc": "Kişiselleştirilmiş kariyer planlaması ve uzun vadeli gelişim rehberliği.",
+    "service4_title": "Marka ve Medya Yönetimi",
+    "service4_desc": "Medya, sponsorluklar ve PR aracılığıyla güçlü kişisel markalar oluşturma.",
+    
+    "contact_title": "İletişim",
+    "contact_desc": "Sporosphere Sports Agency ile iletişime geçmekten çekinmeyin. Yeni fırsatlara her zaman açığız.",
+    "contact_address": "Adres",
+    "contact_email": "E-posta",
+    "contact_phone": "Telefon",
+    
+    "form_name": "Adınız",
+    "form_email": "E-postanız",
+    "form_message": "Mesajınız",
+    "form_agree": "Kabul ediyorum: ",
+    "form_policy": "Gizlilik Politikası",
+    "form_btn": "Mesaj Gönder",
+
+    "footer_desc": "Küresel başarıya odaklanmış profesyonel bir futbol ve spor yönetim ajansı.",
+    "footer_links": "Hızlı Bağlantılar",
+    "footer_follow": "Bizi Takip Edin",
+    "footer_copyright": "© 2025 Sporosphere Sports Agency. Tüm hakları saklıdır."
+}

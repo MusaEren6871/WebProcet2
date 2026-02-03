@@ -1,0 +1,51 @@
+{
+    "nav_about": "À propos",
+    "nav_services": "Services",
+    "nav_contact": "Contact",
+
+    "hero_title": "Football & Sports",
+
+    "about_title": "À propos de nous",
+    "about_intro": "Sporosphere Sports Agency est une agence moderne de gestion du football et du sport, dédiée à la représentation d'athlètes talentueux sur la scène mondiale.",
+
+    "mission_title": "Notre Mission",
+    "mission_text": "Guider les athlètes avec professionnalisme, intégrité et une perspective à long terme, tant sur le terrain qu'en dehors.",
+
+    "vision_title": "Notre Vision",
+    "vision_text": "Devenir une agence de gestion sportive de confiance mondiale, reconnue pour sa transparence et son excellence.",
+
+    "values_title": "Nos Valeurs",
+    "values_text": "Honnêteté, engagement et une approche axée sur l'athlète dans chaque décision que nous prenons.",
+
+    "stat_athletes": "Athlètes Représentés",
+    "stat_countries": "Pays",
+    "stat_years": "Années d'Expérience",
+
+    "services_title": "Nos Services",
+    "service1_title": "Représentation de Joueurs",
+    "service1_desc": "Une représentation professionnelle garantissant la protection des intérêts des joueurs à chaque étape.",
+    "service2_title": "Négociation de Contrats",
+    "service2_desc": "Négociations stratégiques axées sur la valeur à long terme et la sécurité financière.",
+    "service3_title": "Gestion de Carrière",
+    "service3_desc": "Planification de carrière personnalisée et conseils de développement à long terme.",
+    "service4_title": "Gestion de Marque & Médias",
+    "service4_desc": "Création de marques personnelles fortes via les médias, les parrainages et les relations publiques.",
+
+    "contact_title": "Contactez-nous",
+    "contact_desc": "N'hésitez pas à contacter Sporosphere Sports Agency. Nous sommes toujours ouverts à de nouvelles opportunités.",
+    "contact_address": "Adresse",
+    "contact_email": "E-mail",
+    "contact_phone": "Téléphone",
+
+    "form_name": "Votre Nom",
+    "form_email": "Votre E-mail",
+    "form_message": "Votre Message",
+    "form_agree": "J'accepte la ",
+    "form_policy": "Politique de Confidentialité",
+    "form_btn": "Envoyer le Message",
+
+    "footer_desc": "Une agence professionnelle de gestion du football et du sport axée sur le succès mondial.",
+    "footer_links": "Liens Rapides",
+    "footer_follow": "Suivez-nous",
+    "footer_copyright": "© 2025 Sporosphere Sports Agency. Tous droits réservés."
+}

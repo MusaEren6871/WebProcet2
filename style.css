@@ -6,11 +6,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
 body {
-    color: #111;
-    background: #fff;
+    color: #e5e7eb;
+    background: radial-gradient(circle at top, #0b1026, #070b1a);
 }
 
 /* =========================
@@ -18,13 +16,15 @@ body {
 ========================= */
 
 .header {
-    position: fixed;          /* SABİT */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;            /* Videonun üstünde */
+    z-index: 1000;
     padding: 20px 0;
-    background: transparent;  /* Hero üstünde şeffaf */
+    background: rgba(11, 16, 38, 0.55);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     transition: background 0.3s ease;
 }
 
@@ -35,16 +35,18 @@ body {
 }
 
 .logo {
-    color: #fff;
     font-weight: bold;
     letter-spacing: 2px;
+    background: linear-gradient(135deg, #ff2ec4, #3b82ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav a {
     position: relative;
     margin-left: 20px;
     text-decoration: none;
-    color: #fff;
+    color: #e5e7eb;
     font-size: 14px;
     padding-bottom: 4px;
 }
@@ -58,7 +60,7 @@ body {
     bottom: 0;
     width: 0%;
     height: 2px;
-    background: currentColor;
+    background: linear-gradient(135deg, #ff2ec4, #3b82ff);
     transition: width 0.3s ease;
 }
 
@@ -66,6 +68,7 @@ body {
 .nav a:hover::after {
     width: 100%;
 }
+
 /* =========================
    HERO (VIDEO BACKGROUND)
 ========================= */
@@ -75,7 +78,7 @@ body {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background: black;
+    background: #050713;
 }
 
 /* Video arka plan */
@@ -86,6 +89,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0.65;
 }
 
 /* Yazı */
@@ -94,9 +98,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
+    color: #ffffff;
     text-align: center;
-
     opacity: 0;
     transition: opacity 1.5s ease;
     z-index: 2;
@@ -110,6 +113,9 @@ body {
     font-size: 48px;
     letter-spacing: 3px;
     text-transform: uppercase;
+    background: linear-gradient(135deg, #ff2ec4, #3b82ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* =======================
@@ -117,7 +123,7 @@ body {
 ======================= */
 
 #about {
-    background: #f7f9fb;
+    background: radial-gradient(circle at top, #0b1026, #070b1a);
     min-height: 100vh;
     padding: 160px 0;
     display: flex;
@@ -126,15 +132,16 @@ body {
 
 /* ANA KUTU */
 .about-box {
-    background: #eef2f6;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px);
     padding: 70px;
-    border-radius: 18px;
+    border-radius: 20px;
     max-width: 960px;
     margin: 0 auto;
-
+    border: 1px solid rgba(255, 255, 255, 0.12);
     box-shadow:
-        0 20px 40px rgba(0, 0, 0, 0.15),
-        0 8px 15px rgba(0, 0, 0, 0.10);
+        0 30px 60px rgba(0, 0, 0, 0.45),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
 /* BAŞLIK */
@@ -143,6 +150,9 @@ body {
     margin-bottom: 25px;
     letter-spacing: 2px;
     text-transform: uppercase;
+    background: linear-gradient(135deg, #ff2ec4, #3b82ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* GİRİŞ METNİ */
@@ -151,7 +161,7 @@ body {
     margin-bottom: 60px;
     font-size: 17px;
     line-height: 1.9;
-    color: #444;
+    color: #cbd5e1;
 }
 
 /* =======================
@@ -166,7 +176,7 @@ body {
 
 .mvv-item {
     padding-top: 20px;
-    border-top: 2px solid rgba(0, 0, 0, 0.12);
+    border-top: 2px solid rgba(59, 130, 255, 0.35);
 }
 
 .mvv-item h3 {
@@ -174,12 +184,13 @@ body {
     margin-bottom: 12px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    color: #ffffff;
 }
 
 .mvv-item p {
     font-size: 15px;
     line-height: 1.7;
-    color: #444;
+    color: #cbd5e1;
 }
 
 /* =======================
@@ -189,8 +200,7 @@ body {
 .about-stats {
     margin-top: 80px;
     padding-top: 50px;
-    border-top: 1px solid rgba(0, 0, 0, 0.15);
-
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
@@ -207,6 +217,9 @@ body {
     font-size: 44px;
     font-weight: bold;
     letter-spacing: 1px;
+    background: linear-gradient(135deg, #ff2ec4, #3b82ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 8px;
 }
 
@@ -218,7 +231,7 @@ body {
     font-size: 14px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #555;
+    color: #94a3b8;
 }
 
 /* =======================
@@ -251,7 +264,7 @@ body {
 ======================= */
 
 #services {
-    background: #f7f9fb;
+    background: radial-gradient(circle at top, #0b1026, #070b1a);
     padding: 160px 0;
 }
 
@@ -261,6 +274,9 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 80px;
+    background: linear-gradient(135deg, #ff2ec4, #3b82ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* KART DÜZENİ */
@@ -272,12 +288,14 @@ body {
 
 /* TEK KART */
 .service-card {
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(16px);
     padding: 50px;
-    border-radius: 16px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
     box-shadow:
-        0 12px 25px rgba(0, 0, 0, 0.08),
-        0 6px 10px rgba(0, 0, 0, 0.05);
+        0 25px 50px rgba(0, 0, 0, 0.45),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05);
 
     opacity: 0;
     transform: translateY(40px);
@@ -293,37 +311,42 @@ body {
     transform: translateY(0);
 }
 
-/* HOVER */
 .service-card:hover {
     box-shadow:
-        0 20px 40px rgba(0, 0, 0, 0.12),
-        0 10px 20px rgba(0, 0, 0, 0.08);
+        0 35px 70px rgba(59, 130, 255, 0.35),
+        0 0 30px rgba(255, 46, 196, 0.25);
 }
+/* HOVER */
+.service-card:hover {
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.4), 
+        0 0 20px rgba(0, 242, 255, 0.2);
+    transform: translateY(-5px);
+    border: 1px solid rgba(255, 0, 255, 0.4);
+}
+
 .service-card h3 {
     font-size: 20px;
     margin-bottom: 15px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    color: #00f2ff; /* Neon Mavi */
+    text-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
 }
 
 .service-card p {
     font-size: 15px;
     line-height: 1.8;
-    color: #555;
+    color: #cbd5e0; /* Açık gri/mavi tonu */
 }
 
-
-
-/* =======================
-   CONTACT SECTION
+/* ======================= 
+   CONTACT SECTION 
 ======================= */
-
-
 .contact-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
@@ -335,6 +358,10 @@ body {
     font-size: 42px;
     letter-spacing: 2px;
     margin-bottom: 25px;
+    background: linear-gradient(90deg, #00f2ff, #ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
 }
 
 .contact-info p {
@@ -342,6 +369,7 @@ body {
     line-height: 1.8;
     max-width: 420px;
     margin-bottom: 50px;
+    color: #a0aec0;
 }
 
 .contact-details div {
@@ -354,43 +382,54 @@ body {
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 5px;
+    color: #ff00ff; /* Neon Pembe */
 }
 
 .contact-details span {
     font-size: 15px;
-    color: #333;
+    color: #e2e8f0;
 }
 
-/* FORM KUTUSU */
+/* FORM KUTUSU (Glassmorphism) */
 .contact-form-box {
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     padding: 60px;
     border-radius: 20px;
-    box-shadow:
-        0 25px 50px rgba(0, 0, 0, 0.15),
-        0 10px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 
+        0 25px 50px rgba(0, 0, 0, 0.3), 
+        0 0 15px rgba(0, 242, 255, 0.1);
 }
 
 .contact-form-box h3 {
     font-size: 32px;
     margin-bottom: 40px;
     letter-spacing: 2px;
+    color: #ffffff;
+    border-left: 4px solid #ff00ff;
+    padding-left: 15px;
 }
 
-/* =======================
-   CONTACT FORM
+/* ======================= 
+   CONTACT FORM 
 ======================= */
-
-.contact-form-box input,
-.contact-form-box textarea {
+.contact-form-box input, .contact-form-box textarea {
     width: 100%;
     border: none;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid rgba(0, 242, 255, 0.3);
     padding: 14px 0;
     margin-bottom: 30px;
     font-size: 15px;
     outline: none;
     background: transparent;
+    color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form-box input:focus, .contact-form-box textarea:focus {
+    border-bottom: 2px solid #ff00ff;
 }
 
 .contact-form-box textarea {
@@ -404,7 +443,7 @@ body {
     align-items: flex-start;
     gap: 12px;
     font-size: 14px;
-    color: #555;
+    color: #a0aec0;
     line-height: 1.6;
     margin-bottom: 40px;
 }
@@ -414,15 +453,17 @@ body {
     width: 16px;
     height: 16px;
     cursor: pointer;
+    accent-color: #ff00ff;
 }
 
 .checkbox a {
-    color: #0a58ca;
+    color: #00f2ff;
     text-decoration: none;
 }
 
 .checkbox a:hover {
     text-decoration: underline;
+    text-shadow: 0 0 8px rgba(0, 242, 255, 0.6);
 }
 
 .checkbox-error {
@@ -430,13 +471,13 @@ body {
     margin-top: -20px;
     margin-bottom: 30px;
     font-size: 13px;
-    color: #d93025;
+    color: #ff4d4d;
 }
 
 /* SEND BUTTON */
 .contact-form-box button {
     width: 100%;
-    background: #0a58ca;
+    background: linear-gradient(90deg, #00f2ff, #0a58ca);
     color: #fff;
     border: none;
     padding: 16px 0;
@@ -445,21 +486,25 @@ body {
     font-weight: 600;
     letter-spacing: 1px;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(0, 242, 255, 0.3);
 }
 
 .contact-form-box button:hover {
-    background: #084298;
+    background: linear-gradient(90deg, #ff00ff, #00f2ff);
     transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 0, 255, 0.4);
 }
 
-/* =======================
-   CONTACT SECTION
+/* ======================= 
+   CONTACT SECTION 
 ======================= */
-
 .contact-section {
-    background: #f7f9fb;
+    background: #050a18; /* Koyu Lacivert Zemin */
     padding: 160px 0;
+    position: relative;
+    overflow: hidden;
 }
 
 .contact-grid {
@@ -481,7 +526,7 @@ body {
     max-width: 420px;
     margin-bottom: 40px;
     line-height: 1.8;
-    color: #555;
+    color: #a0aec0;
 }
 
 .contact-details {
@@ -498,31 +543,13 @@ body {
     font-size: 13px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #777;
+    color: #718096;
     margin-bottom: 5px;
 }
 
 .contact-details span {
     font-size: 15px;
-    color: #111;
-}
-
-/* SOCIAL */
-.social-links {
-    display: flex;
-    gap: 20px;
-}
-
-.social-links a {
-    text-decoration: none;
-    font-size: 14px;
-    color: #0a58ca;
-    border-bottom: 1px solid transparent;
-    transition: border 0.3s ease;
-}
-
-.social-links a:hover {
-    border-bottom: 1px solid #0a58ca;
+    color: #ffffff;
 }
 
 /* SOCIAL ICONS */
@@ -535,28 +562,24 @@ body {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-
+    border: 1px solid rgba(0, 242, 255, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
-
-    color: #0a58ca;
+    color: #00f2ff;
     font-size: 18px;
     text-decoration: none;
-
-    transition: 
-        background 0.3s ease,
-        color 0.3s ease,
-        transform 0.3s ease;
+    transition: all 0.3s ease;
+    background: rgba(0, 242, 255, 0.05);
 }
 
 .social-links a:hover {
-    background: #0a58ca;
+    background: #ff00ff;
     color: #ffffff;
     transform: translateY(-4px);
+    border-color: #ff00ff;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
 }
-
 /* =======================
    MOBILE
 ======================= */
@@ -577,12 +600,13 @@ body {
     visibility: hidden;
     margin-top: 25px;
     padding: 14px;
-    border: 1px solid #2ecc71;
-    background: rgba(46, 204, 113, 0.08);
-    color: #2ecc71;
+    border: 1px solid #00f2ff; /* Neon Mavi Sınır */
+    background: rgba(0, 242, 255, 0.05); /* Çok hafif neon mavi arka plan */
+    color: #00f2ff; /* Neon Mavi Yazı */
     font-size: 14px;
     border-radius: 8px;
     text-align: center;
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.2);
 
     opacity: 0;
     transform: translateY(10px);
@@ -594,10 +618,12 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+
 .form-success.hide {
     opacity: 0;
     transform: translateY(10px);
 }
+
 /* =======================
    MOBILE
 ======================= */
@@ -629,6 +655,8 @@ body {
 
     .service-card {
         padding: 40px;
+        background: rgba(255, 255, 255, 0.03); /* Mobil kartlar için cam efekti */
+        border: 1px solid rgba(0, 242, 255, 0.1);
     }
 }
 
@@ -648,17 +676,19 @@ body {
 
 h2 {
     margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.3); /* Hafif neon pembe ışıma */
 }
-
 
 /* =======================
    FOOTER
 ======================= */
 
 .footer {
-    background: #0f172a;
-    color: #cbd5e1;
+    background: #020617; /* Daha koyu lacivert/siyah zemin */
+    color: #94a3b8;
     padding: 80px 0 30px;
+    border-top: 1px solid rgba(0, 242, 255, 0.1); /* Neon mavi ince ayraç */
 }
 
 .footer-grid {
@@ -674,7 +704,8 @@ h2 {
     margin-bottom: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #00f2ff; /* Neon Mavi */
+    text-shadow: 0 0 8px rgba(0, 242, 255, 0.4);
 }
 
 .footer-brand p {
@@ -690,7 +721,8 @@ h2 {
     margin-bottom: 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #ff00ff; /* Neon Pembe */
+    text-shadow: 0 0 8px rgba(255, 0, 255, 0.4);
 }
 
 .footer-links ul {
@@ -705,35 +737,150 @@ h2 {
     color: #cbd5e1;
     text-decoration: none;
     font-size: 14px;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #ffffff;
+    color: #00f2ff; /* Hoverda neon mavi */
+    padding-left: 5px; /* Hafif kayma efekti */
 }
 
 /* SOCIAL ICONS override (dark bg) */
 .footer .social-links a {
-    border-color: rgba(255, 255, 255, 0.25);
-    color: #ffffff;
+    border-color: rgba(0, 242, 255, 0.3);
+    color: #00f2ff;
+    background: rgba(0, 242, 255, 0.05);
 }
 
 .footer .social-links a:hover {
-    background: #ffffff;
-    color: #0f172a;
+    background: linear-gradient(45deg, #00f2ff, #ff00ff);
+    color: #ffffff;
+    border-color: transparent;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
 }
 
 /* BOTTOM */
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding-top: 25px;
     text-align: center;
     font-size: 13px;
-    color: #94a3b8;
+    color: #64748b;
 }
 
 .footer-bottom p {
     margin-bottom: 0;
+}
+
+/* Header Düzeni Güncellemesi */
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Menü ile Dil butonu arasındaki boşluk */
+}
+
+/* Dil Seçici (Language Selector) Stilleri */
+.language-selector {
+    position: relative;
+    display: inline-block;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #fff;
+}
+
+/* Dropdown Menü */
+.lang-dropdown {
+    display: none; /* Hover olunca görünür */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    
+    /* Zemin: Koyu lacivert ve şeffaf (Glassmorphism) */
+    background: rgba(5, 10, 24, 0.95); 
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    
+    /* Neon Çerçeve */
+    border: 1px solid rgba(0, 242, 255, 0.2);
+    border-radius: 15px; /* Daha yuvarlak köşeler */
+    
+    min-width: 150px;
+    padding: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6); /* Derin gölge */
+    z-index: 1000;
+    list-style: none;
+    margin-top: 15px;
+    
+    /* Açılış Animasyonu */
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.lang-dropdown::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: transparent;
+}
+
+/* Hover olunca menüyü göster */
+.language-selector:hover .lang-dropdown {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.lang-dropdown li a {
+    color: #cbd5e1; /* Açık gri yazı */
+    padding: 12px 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.lang-dropdown li a:hover {
+    /* Neon Mavi arka plan parlaması */
+    background: rgba(0, 242, 255, 0.1); 
+    color: #00f2ff; /* Neon mavi yazı */
+    transform: translateX(5px); /* Sağa hafif kayma efekti */
+    box-shadow: -2px 0 10px rgba(0, 242, 255, 0.1);
+}
+
+/* Bayrak ikonları için */
+.lang-dropdown img {
+    border-radius: 2px;
+    width: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 /* =======================

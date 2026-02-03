@@ -5,135 +5,144 @@
     <title>Sporosphere Sports Agency</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Icons -->
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
 
-    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ================= HEADER ================= -->
 <header class="header">
     <div class="container header-inner">
         <div class="logo">SPOROSPHERE</div>
 
-        <nav class="nav">
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="nav-wrapper">
+            <nav class="nav">
+                <a href="#about" data-i18n="nav_about">About</a>
+                <a href="#services" data-i18n="nav_services">Services</a>
+                <a href="#contact" data-i18n="nav_contact">Contact</a>
+            </nav>
+
+            <div class="language-selector">
+                <button class="lang-btn">
+                    <i class="fa-solid fa-globe"></i> 
+                    <span id="current-lang">EN</span> 
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="lang-dropdown">
+                    <li><a href="#" onclick="changeLanguage('tr')"><img src="https://flagcdn.com/20x15/tr.png" alt="TR"> Türkçe</a></li>
+                    <li><a href="#" onclick="changeLanguage('en')"><img src="https://flagcdn.com/20x15/gb.png" alt="EN"> English</a></li>
+                    <li><a href="#" onclick="changeLanguage('de')"><img src="https://flagcdn.com/20x15/de.png" alt="DE"> Deutsch</a></li>
+                    <li><a href="#" onclick="changeLanguage('fr')"><img src="https://flagcdn.com/20x15/fr.png" alt="FR"> Français</a></li>
+                    <li><a href="#" onclick="changeLanguage('ar')"><img src="https://flagcdn.com/20x15/sa.png" alt="AR"> العربية</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </header>
 
-<!-- ================= HERO ================= -->
 <section class="hero">
     <video id="bgVideo" autoplay muted playsinline>
         <source src="video/hero.mp4" type="video/mp4">
     </video>
 
     <div class="hero-text">
-        <h1>Football & Sports</h1>
+        <h1 data-i18n="hero_title">Football & Sports</h1>
     </div>
 </section>
 
-<!-- ================= ABOUT ================= -->
 <section id="about" class="about-section">
     <div class="container about-box">
 
-        <h2 class="section-title">About Us</h2>
+        <h2 class="section-title" data-i18n="about_title">About Us</h2>
 
-        <p class="about-intro">
+        <p class="about-intro" data-i18n="about_intro">
             Sporosphere Sports Agency is a modern football and sports management agency
             dedicated to representing talented athletes on a global stage.
         </p>
 
-        <!-- Mission / Vision / Values -->
         <div class="about-mvv">
             <div class="mvv-item">
-                <h3>Our Mission</h3>
-                <p>
+                <h3 data-i18n="mission_title">Our Mission</h3>
+                <p data-i18n="mission_text">
                     To guide athletes with professionalism, integrity,
                     and a long-term perspective both on and off the field.
                 </p>
             </div>
 
             <div class="mvv-item">
-                <h3>Our Vision</h3>
-                <p>
+                <h3 data-i18n="vision_title">Our Vision</h3>
+                <p data-i18n="vision_text">
                     To become a globally trusted sports management agency
                     recognized for transparency and excellence.
                 </p>
             </div>
 
             <div class="mvv-item">
-                <h3>Our Values</h3>
-                <p>
+                <h3 data-i18n="values_title">Our Values</h3>
+                <p data-i18n="values_text">
                     Honesty, commitment, and an athlete-first approach
                     in every decision we make.
                 </p>
             </div>
         </div>
 
-        <!-- Stats -->
         <div class="about-stats">
             <div class="stat-item">
                 <span class="stat-number" data-target="50">0</span>
-                <span class="stat-label">Athletes Represented</span>
+                <span class="stat-label" data-i18n="stat_athletes">Athletes Represented</span>
             </div>
 
             <div class="stat-item">
                 <span class="stat-number" data-target="12">0</span>
-                <span class="stat-label">Countries</span>
+                <span class="stat-label" data-i18n="stat_countries">Countries</span>
             </div>
 
             <div class="stat-item">
                 <span class="stat-number" data-target="8">0</span>
-                <span class="stat-label">Years Experience</span>
+                <span class="stat-label" data-i18n="stat_years">Years Experience</span>
             </div>
         </div>
 
     </div>
 </section>
 
-<!-- ================= SERVICES ================= -->
 <section id="services" class="services-section">
     <div class="container">
 
-        <h2 class="section-title">Our Services</h2>
+        <h2 class="section-title" data-i18n="services_title">Our Services</h2>
 
         <div class="services-grid">
 
             <div class="service-card">
-                <h3>Player Representation</h3>
-                <p>
+                <h3 data-i18n="service1_title">Player Representation</h3>
+                <p data-i18n="service1_desc">
                     Professional representation ensuring players’
                     interests are protected at every stage.
                 </p>
             </div>
 
             <div class="service-card">
-                <h3>Contract Negotiation</h3>
-                <p>
+                <h3 data-i18n="service2_title">Contract Negotiation</h3>
+                <p data-i18n="service2_desc">
                     Strategic negotiations focused on long-term value
                     and financial security.
                 </p>
             </div>
 
             <div class="service-card">
-                <h3>Career Management</h3>
-                <p>
+                <h3 data-i18n="service3_title">Career Management</h3>
+                <p data-i18n="service3_desc">
                     Personalized career planning and long-term
                     development guidance.
                 </p>
             </div>
 
             <div class="service-card">
-                <h3>Brand & Media Management</h3>
-                <p>
+                <h3 data-i18n="service4_title">Brand & Media Management</h3>
+                <p data-i18n="service4_desc">
                     Building strong personal brands through media,
                     sponsorships, and PR.
                 </p>
@@ -143,30 +152,28 @@
     </div>
 </section>
 
-<!-- ================= CONTACT ================= -->
 <section id="contact" class="contact-section">
     <div class="container contact-grid">
 
-        <!-- INFO -->
         <div class="contact-info">
-            <h2 class="section-title">Contact Us</h2>
+            <h2 class="section-title" data-i18n="contact_title">Contact Us</h2>
 
-            <p>
+            <p data-i18n="contact_desc">
                 Feel free to reach out to Sporosphere Sports Agency.
                 We are always open to new opportunities.
             </p>
 
             <ul class="contact-details">
                 <li>
-                    <strong>Address</strong>
+                    <strong data-i18n="contact_address">Address</strong>
                     <span>Istanbul, Türkiye</span>
                 </li>
                 <li>
-                    <strong>Email</strong>
+                    <strong data-i18n="contact_email">Email</strong>
                     <span>info@sporosphere.com</span>
                 </li>
                 <li>
-                    <strong>Phone</strong>
+                    <strong data-i18n="contact_phone">Phone</strong>
                     <span>+90 5XX XXX XX XX</span>
                 </li>
             </ul>
@@ -178,18 +185,18 @@
             </div>
         </div>
 
-        <!-- FORM -->
         <div class="contact-form-box">
           <form>
 
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
+            <input type="text" data-i18n="form_name" placeholder="Your Name" required>
+            <input type="email" data-i18n="form_email" placeholder="Your Email" required>
+            <textarea data-i18n="form_message" placeholder="Your Message" required></textarea>
 
             <div class="checkbox">
                 <input type="checkbox" id="policy" required>
                 <label for="policy">
-                    I agree to the <a href="#">Privacy Policy</a>
+                    <span data-i18n="form_agree">I agree to the</span> 
+                    <a href="#" data-i18n="form_policy">Privacy Policy</a>
                 </label>
             </div>
 
@@ -197,7 +204,7 @@
                 Please accept the privacy policy.
             </div>
 
-            <button type="submit">Send Message</button>
+            <button type="submit" data-i18n="form_btn">Send Message</button>
 
             <p class="form-success">
                 Your message has been sent successfully.
@@ -209,29 +216,28 @@
     </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
 <footer class="footer">
     <div class="container footer-grid">
 
         <div class="footer-brand">
             <h3>Sporosphere</h3>
-            <p>
+            <p data-i18n="footer_desc">
                 A professional football & sports management agency
                 focused on global success.
             </p>
         </div>
 
         <div class="footer-links">
-            <h4>Quick Links</h4>
+            <h4 data-i18n="footer_links">Quick Links</h4>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" data-i18n="nav_about">About</a></li>
+                <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
             </ul>
         </div>
 
         <div class="footer-social">
-            <h4>Follow Us</h4>
+            <h4 data-i18n="footer_follow">Follow Us</h4>
             <div class="social-links">
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -242,7 +248,7 @@
     </div>
 
     <div class="footer-bottom">
-        <p>© 2025 Sporosphere Sports Agency. All rights reserved.</p>
+        <p data-i18n="footer_copyright">© 2025 Sporosphere Sports Agency. All rights reserved.</p>
     </div>
 </footer>
 <script src="script.js"></script>
