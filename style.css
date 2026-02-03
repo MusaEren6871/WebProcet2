@@ -856,6 +856,12 @@ h2 {
     transform: translateY(0);
 }
 
+.language-selector.active .lang-dropdown {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .lang-dropdown li a {
     color: #cbd5e1; /* Açık gri yazı */
     padding: 12px 15px;
