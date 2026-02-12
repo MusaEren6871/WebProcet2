@@ -54,40 +54,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Sayfa ilk açıldığında varsayılan dil Türkçe olsun
     changeLanguage('tr');
-
-    /* =======================
-       HERO TEXT ANIMATION
-    ======================= */
-    const video = document.getElementById("bgVideo");
-    const heroText = document.querySelector(".hero-text");
-
-    if (video && heroText) {
-        let textShown = false;
-        video.addEventListener("timeupdate", () => {
-            if (video.currentTime >= 6 && !textShown) {
-                heroText.classList.add("show");
-                textShown = true;
-            }
-        });
-    }
-
+    
     /* =======================
        HEADER SCROLL EFFECT
     ======================= */
     const header = document.querySelector(".header");
-    if (header) {
-        const logo = header.querySelector(".logo");
-        const navLinks = header.querySelectorAll(".nav a");
 
+    if (header) {
         window.addEventListener("scroll", () => {
-            const scrollPassed = window.scrollY > window.innerHeight - 80;
-            // Arka planı CSS'teki lacivert tonuna uyumlu hale getirebilirsin veya böyle kalabilir
-            header.style.background = scrollPassed ? "rgba(5, 10, 24, 0.95)" : "rgba(5, 10, 24, 0.75)";
-            // Logoyu neon efektiyle uyumlu bırakmak için renk değişimini iptal edebiliriz veya güncelleyebiliriz
-            // Fütüristik tema için beyaz/neon kalması daha iyidir:
-            // logo.style.color = scrollPassed ? "#fff" : "#fff"; 
+
+            const scrollPassed = window.scrollY > 100; 
+            // İstersen hero yüksekliğine göre de yapabiliriz
+
+            if (scrollPassed) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+
         });
     }
+
 
     /* =======================
        ABOUT STATISTICS COUNTERS
@@ -152,9 +139,9 @@ document.addEventListener("DOMContentLoaded", () => {
             inputs.forEach(input => {
                 if (input.type !== "checkbox" && !input.value.trim()) {
                     isValid = false;
-                    input.style.borderBottomColor = "#d93025";
+                    input.style.borderBottomColor = "#E53935"; // Kırmızı hata
                 } else {
-                    input.style.borderBottomColor = "rgba(0, 242, 255, 0.3)"; // Tema rengine uygun sınır
+                    input.style.borderBottomColor = "rgba(76, 175, 80, 0.4)"; // Yeşil destek
                 }
             });
 
@@ -172,9 +159,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
             setTimeout(() => {
                 successMessage.classList.remove("show");
-                successMessage.classList.add("hide"); // Animasyonlu kapanış için
+                successMessage.classList.add("hide");
             }, 3000);
             
         });
     }
+
 });
